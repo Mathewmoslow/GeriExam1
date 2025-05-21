@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import AgeRelatedChangesQuiz from "./Components/AgeRelatedChangesQuiz";
+import ClinicalJudgmentActivity from "./Components/ClinicalJudgementActivity";
+import SkinAssessmentActivity from "./Components/SkinAssessmentActivity";
+import BowTieQuestionActivity from "./Components/BowTieQuestionActivity";
+import MedicationReviewActivity from "./Components/MedicationReviewActivity";
+import EndOfLifeCaseStudy from "./Components/EndOfLifeCaseStudy";
 import {
   ChevronRight,
   ChevronLeft,
@@ -309,12 +315,14 @@ const GerontologicNursingModule = () => {
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xl font-bold mb-4">Knowledge Check</h3>
-                <AgeRelatedChangesQuiz
-                  onComplete={(score) => {
+                <h3 className="text-xl font-bold mb-4">
+                  Interactive Activity: Clinical Judgment Scenario
+                </h3>
+                <ClinicalJudgmentActivity
+                  onComplete={() => {
                     setProgress({
                       ...progress,
-                      module1: Math.max(progress.module1, 25),
+                      module1: Math.max(progress.module1, 50),
                     });
                   }}
                 />
