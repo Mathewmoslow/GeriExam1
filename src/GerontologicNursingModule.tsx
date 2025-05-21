@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import AgeRelatedChangesQuiz from "./components/AgeRelatedChangesQuiz";
-import ClinicalJudgmentActivity from "./components/ClinicalJudgmentActivity";
-import SkinAssessmentActivity from "./components/SkinAssessmentActivity";
-import BowTieQuestionActivity from "./components/BowTieQuestionActivity";
-import MedicationReviewActivity from "./components/MedicationReviewActivity";
-import EndOfLifeCaseStudy from "./components/EndOfLifeCaseStudy";
+import AgeRelatedChangesQuiz from "./Components/AgeRelatedChangesQuiz";
+import ClinicalJudgmentActivity from "./Components/ClinicalJudgementActivity";
+import SkinAssessmentActivity from "./Components/SkinAssessmentActivity";
+import BowTieQuestionActivity from "./Components/BowTieQuestionActivity";
+import MedicationReviewActivity from "./Components/MedicationReviewActivity";
+import EndOfLifeCaseStudy from "./Components/EndOfLifeCaseStudy";
 import {
   ChevronRight,
   ChevronLeft,
